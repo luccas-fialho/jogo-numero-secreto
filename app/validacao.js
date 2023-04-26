@@ -3,6 +3,7 @@ function verificaChute(chute) {
     if(chute == 'game over') {
         document.body.innerHTML = `
             <h2>GAME OVER!</h2>
+            <h3>O número secreto era ${numeroSecreto}</h3>
             <button id="jogar-novamente" class="btn-jogar">Jogar Novamente</button>
         `
         return

@@ -57,4 +57,5 @@ h3 {
 
 .btn-jogar:hover {
     background: #3A1078;
+    cursor: pointer;
 }
