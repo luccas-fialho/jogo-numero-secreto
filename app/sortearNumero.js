@@ -11,5 +11,3 @@ const numeroSecreto = geraNumeroSecreto()
 function geraNumeroSecreto() {
     return parseInt(Math.random() * maiorValor + 1)
 }
-
-console.log(numeroSecreto);
