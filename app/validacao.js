@@ -1,9 +1,18 @@
 function verificaChute(chute) {
+
+    if(chute == 'game over') {
+        document.body.innerHTML = `
+            <h2>GAME OVER!</h2>
+            <button id="jogar-novamente" class="btn-jogar">Jogar Novamente</button>
+        `
+        return
+    } 
+
     const numero = +chute //transdormando a string em inteiro
 
     if (chuteForInvalido(numero)) {
-       elementoChute.innerHTML += '<div>Valor inválido</div>';
-       return
+        elementoChute.innerHTML += '<div>Valor inválido</div>';
+        return
     }
 
     if (numero > maiorValor || numero < menorValor) {
